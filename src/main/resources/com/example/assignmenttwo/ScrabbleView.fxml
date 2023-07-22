@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="606.0" prefWidth="671.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignmenttwo.ScrabbleController">
+    <children>
+        <GridPane fx:id="rootPane" alignment="CENTER" hgap="20.0" layoutX="154.0" layoutY="90.0" prefHeight="351.0" prefWidth="313.0" vgap="20.0" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="90.0">
+            <!-- Buttons for each letter of the alphabet arranged in a grid -->
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="A" userData="A" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="B" userData="B" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="C" userData="C" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="D" userData="D" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="E" userData="E" GridPane.columnIndex="4" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="F" userData="F" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="G" userData="G" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="H" userData="H" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="I" userData="I" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="J" userData="J" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="K" userData="K" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="L" userData="L" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="M" userData="M" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="N" userData="N" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="O" userData="O" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="P" userData="P" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="Q" userData="Q" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="R" userData="R" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="S" userData="S" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="T" userData="T" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="U" userData="U" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="V" userData="V" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="W" userData="W" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="X" userData="X" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="Y" userData="Y" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Button minHeight="40.0" minWidth="40.0" onAction="#handleLetterClick" prefWidth="0.0" text="Z" userData="Z" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+      <TextField fx:id="enterText" layoutX="206.0" layoutY="21.0" prefHeight="55.0" prefWidth="298.0" />
+      <Button layoutX="546.0" layoutY="29.0" mnemonicParsing="false" onAction="#submitClick" prefHeight="40.0" prefWidth="110.0" text="Submit" />
+      <Label fx:id="displayErrors" layoutX="220.0" layoutY="468.0" prefHeight="55.0" prefWidth="441.0" />
+      <Label fx:id="previousWordsLabel" layoutX="14.0" layoutY="553.0" prefHeight="40.0" prefWidth="547.0" />
+      <Label layoutX="546.0" layoutY="90.0" prefHeight="40.0" prefWidth="110.0" text="Total Points : " />
+      <Label fx:id="userPoints" layoutX="546.0" layoutY="130.0" prefHeight="40.0" prefWidth="110.0" />
+      <ListView fx:id="letterValuesDisplay" layoutY="-1.0" prefHeight="542.0" prefWidth="160.0" />
+      <Label fx:id="theGameIsOver" layoutX="20.0" layoutY="18.0" prefHeight="571.0" prefWidth="654.0" text="GAME OVER" />
+    </children>
+</AnchorPane>
